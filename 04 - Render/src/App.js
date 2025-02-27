@@ -1,9 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <h1>Olá Mundo</h1>
+    <h1>04 - Render</h1>
 
   );
 }
