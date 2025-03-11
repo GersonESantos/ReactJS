@@ -9,9 +9,9 @@ export default function Index() {
     return (
         <View style={styles.container}>
         <Text style={styles.title}>Ola GersonES!</Text>
-        <Button title="Entrar" />
-        <Button/>
-        <Button/>
+        <Button title="Entrar" onPress={handleMessage}/>
+        <Button title="Continuar" onPress={handleMessage}/>
+        <Button title="Sair" onPress={handleMessage}/>
         </View>
     );
     }
