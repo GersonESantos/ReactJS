@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet, Alert, Button } from "react-native";
+import { View, Text, StyleSheet, Alert } from "react-native";
+import { Button } from "../components/button";
 
 export default function Index() {
     function handleMessage() {
@@ -8,7 +9,9 @@ export default function Index() {
     return (
         <View style={styles.container}>
         <Text style={styles.title}>Ola GersonES!</Text>
-        <Button title="Enviar" onPress={handleMessage} />
+        <Button title="Entrar" />
+        <Button/>
+        <Button/>
         </View>
     );
     }
@@ -18,7 +21,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-         padding: 32    
+         padding: 32,   
+         gap: 16 
         },
     title :{ 
         color: "red", 
