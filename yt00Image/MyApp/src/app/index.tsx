@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, Image } from "react-native";
-const img = require("../../assets/images/favicon.png");
+const img = require("../../assets/images/image.png");
 export default function Index() {
     return (
         <View style={styles.container}>
         <Text style={styles.title}>Ola GersonES!</Text>
-        <Image source={img}/>
+        <Image style={styles.img} source={img}/>
         
         </View>
     );
@@ -22,5 +22,10 @@ const styles = StyleSheet.create({
         color: "red", 
         fontSize: 24,
         fontWeight: "bold",
+    },
+    img: {
+        width: 100,
+        height: 100,
+        margin: 16,
     },
     });
