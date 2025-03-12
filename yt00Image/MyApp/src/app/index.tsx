@@ -1,17 +1,26 @@
-import React from 'react';
-import {View, Text} from 'react-native';
-import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+import { View, Text, StyleSheet, Image } from "react-native";
+const img = require("../../assets/images/favicon.png");
+export default function Index() {
+    return (
+        <View style={styles.container}>
+        <Text style={styles.title}>Ola GersonES!</Text>
+        <Image source={img}/>
+        
+        </View>
+    );
+    }
 
-const ViewBoxesWithColorAndText = () => {
-  return (
-    <SafeAreaProvider>
-      <SafeAreaView style={{height: 100, flexDirection: 'row'}}>
-        <View style={{backgroundColor: 'blue', flex: 0.2}} />
-        <View style={{backgroundColor: 'red', flex: 0.4}} />
-        <Text>Hello World! Yt000</Text>
-      </SafeAreaView>
-    </SafeAreaProvider>
-  );
-};
-
-export default ViewBoxesWithColorAndText;
+const styles = StyleSheet.create({
+    container: { 
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+         padding: 32,
+    
+        },
+    title :{ 
+        color: "red", 
+        fontSize: 24,
+        fontWeight: "bold",
+    },
+    });
