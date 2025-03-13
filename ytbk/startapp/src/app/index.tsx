@@ -1,5 +1,7 @@
 import { View, Text, StyleSheet, Alert } from "react-native";
 import { Button } from "../components/button";
+import { Input } from "../components/input";
+
 
 export default function Index() {
     function handleMessage() {
@@ -9,6 +11,8 @@ export default function Index() {
     return (
         <View style={styles.container}>
         <Text style={styles.title}>Ola GersonES!</Text>
+        <Input  placeholder="Digite seu nome" />
+        
         <Button title="Entrar" onPress={handleMessage}/>
         <Button title="Continuar" onPress={handleMessage}/>
         <Button title="Sair" onPress={handleMessage}/>
