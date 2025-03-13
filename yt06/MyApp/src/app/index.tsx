@@ -1,12 +1,17 @@
 import { View, Text, StyleSheet, Alert } from "react-native";
 import { Button } from "@/components/button";
 import { Input } from "@/components/input";
-
+import { useState } from "react";
 
 export default function Index() {
+
+    const [name, setName] = useState("")
     function handleMessage() {
         const name = "GersonES"
         Alert.alert("Hello " + name + "!");
+    }
+    function onChangeText(text: string) {
+        setName(text)
     }
     return (
         <View style={styles.container}>
